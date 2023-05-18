@@ -1,0 +1,8 @@
+D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\bin\Debug\GET_WEB-BROWSER.exe
+D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\bin\Debug\GET_WEB-BROWSER.pdb
+D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\obj\x86\Debug\GET_WEB-BROWSER.csprojResolveAssemblyReference.cache
+D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\obj\x86\Debug\GET_WEB_BROWSER.Form1.resources
+D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\obj\x86\Debug\GET_WEB_BROWSER.Properties.Resources.resources
+D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\obj\x86\Debug\GET_WEB-BROWSER.csproj.GenerateResource.Cache
+D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\obj\x86\Debug\GET_WEB-BROWSER.exe
+D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\obj\x86\Debug\GET_WEB-BROWSER.pdb
