@@ -115,7 +115,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(192, 89);
             this.button1.TabIndex = 0;
-            this.button1.Text = "ดาวโหลดแบบฟอร์ม";
+            this.button1.Text = "ดาวน์โหลดแบบฟอร์ม";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

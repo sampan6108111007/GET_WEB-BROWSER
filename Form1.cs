@@ -14,6 +14,10 @@ namespace GET_WEB_BROWSER
     {
         public Form1()
         {
+
+            
+           
+
             InitializeComponent();
             button1.TabStop = false;
             button1.FlatStyle = FlatStyle.Flat;
@@ -39,6 +43,8 @@ namespace GET_WEB_BROWSER
             button5.FlatStyle = FlatStyle.Flat;
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255);
+
+            webBrowser1.Navigating += webBrowser1_Navigating;
   
         }
 
@@ -64,36 +70,23 @@ namespace GET_WEB_BROWSER
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string initialUrl = "http://www.lptcoop.com/lptcoop/%e0%b8%a3%e0%b8%b0%e0%b9%80%e0%b8%9a%e0%b8%b5%e0%b8%a2%e0%b8%9a-%e0%b8%82%e0%b9%89%e0%b8%ad%e0%b8%9a%e0%b8%b1%e0%b8%87%e0%b8%84%e0%b8%b1%e0%b8%9a/";
-            webBrowser1.Navigate(initialUrl);
-        }
-
-        private void webBrowser1_NewWindow(object sender, CancelEventArgs e)
-        {
-            // Prevent opening a new window
-            e.Cancel = true;
-
-            // Get the URL of the new window
-            string newWindowUrl = webBrowser1.Document.ActiveElement.GetAttribute("href");
-
-            // Check if the URL points to a PDF file
-            if (newWindowUrl.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase))
-            {
-                // Open the PDF file in the web browser control
-                webBrowser1.Navigate(newWindowUrl);
-            }
-            else
-            {
-                // Open the URL in the user's default web browser
-                System.Diagnostics.Process.Start(newWindowUrl);
-            }
+            string pdfLink = "http://www.lptcoop.com/lptcoop/%e0%b8%a3%e0%b8%b0%e0%b9%80%e0%b8%9a%e0%b8%b5%e0%b8%a2%e0%b8%9a-%e0%b8%82%e0%b9%89%e0%b8%ad%e0%b8%9a%e0%b8%b1%e0%b8%87%e0%b8%84%e0%b8%b1%e0%b8%9a/";
+            Process.Start(pdfLink);
         }
 
         private void webBrowser1_Navigating(object sender, WebBrowserNavigatingEventArgs e)
         {
-            // Cancel the navigation
-            e.Cancel = true;
+            // Check if the URL points to a PDF file
+            if (e.Url.AbsolutePath.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase))
+            {
+                // Cancel the navigation within the WebBrowser control
+                e.Cancel = true;
+
+                // Open the PDF link externally using the default PDF viewer
+                System.Diagnostics.Process.Start(e.Url.ToString());
+            }
         }
+
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -111,7 +104,7 @@ namespace GET_WEB_BROWSER
             }  
         }
 
-        
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
