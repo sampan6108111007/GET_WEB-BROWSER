@@ -6,3 +6,4 @@ D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\obj\x86\Debug\GET_WEB-B
 D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\obj\x86\Debug\ศูนย์ประสานงานสหกรณ์.exe
 D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\obj\x86\Debug\ศูนย์ประสานงานสหกรณ์.pdb
 D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\obj\x86\Debug\GET_WEB-BROWSER.csprojResolveAssemblyReference.cache
+D:\WinApp_GetWeb-Browser\GET_WEB-BROWSER\GET_WEB-BROWSER\obj\x86\Debug\GET_WEB_BROWSER.Form2.resources

@@ -70,6 +70,7 @@ namespace GET_WEB_BROWSER
 
         private void button4_Click(object sender, EventArgs e)
         {
+            webBrowser1.Navigate("http://www.lptcoop.com/lptcoop/%e0%b8%a3%e0%b8%b0%e0%b9%80%e0%b8%9a%e0%b8%b5%e0%b8%a2%e0%b8%9a-%e0%b8%82%e0%b9%89%e0%b8%ad%e0%b8%9a%e0%b8%b1%e0%b8%87%e0%b8%84%e0%b8%b1%e0%b8%9a/");
             string pdfLink = "http://www.lptcoop.com/lptcoop/%e0%b8%a3%e0%b8%b0%e0%b9%80%e0%b8%9a%e0%b8%b5%e0%b8%a2%e0%b8%9a-%e0%b8%82%e0%b9%89%e0%b8%ad%e0%b8%9a%e0%b8%b1%e0%b8%87%e0%b8%84%e0%b8%b1%e0%b8%9a/";
             Process.Start(pdfLink);
         }
